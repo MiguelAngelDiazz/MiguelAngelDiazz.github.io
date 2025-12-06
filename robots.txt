@@ -1,7 +1,0 @@
-#comentario
-user-agent:*
-Allow:/
-Disallow:/admin
-Disallow/foto
-
-
