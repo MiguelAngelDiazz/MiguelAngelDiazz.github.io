@@ -1,7 +1,0 @@
-Robots.txt
-User-agent:*
-Allow: /
-User-agent: Googlebot
-Allow:/Publico/
-Allow:/Imagenes/
-Disallow:/admin/
