@@ -100,19 +100,19 @@
     <title>Hallaca plato navideño</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header role="banner">
+        <h1><a href="index.html" aria-current="page"></a>Que Sabor pana</a></h1>
+        <nav role="navigation" aria-label="Menú principal">
             <ol>
-                <li>Recetas</li>
-                <li class="titulo"><a href="index.html">Que sabor pana</a></li>
-                <li>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ol>
         </nav>
     </header>
     <main>
         <nav class="breadcrumbs">
                 <a href="https://miguelangeldiazz.github.io/">Inicio ></a> 
-                <a href="https://miguelangeldiazz.github.io/hallaca.html"> Hallaca plato navideño ></a> 
+                <a href="https://miguelangeldiazz.github.io/hallaca.html"> Cachapa ></a> 
         </nav>
         <section>
             <article>
@@ -122,79 +122,128 @@
             </article>
             <article>
                 <table>
-                    <caption>Ingredientes: Guiso</caption>
-                    <tr>
-                        <th>Carne de res</th>
-                        <td>1 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Carne de cerdo</th>
-                        <td>1/2 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Costilla de cerdo</th>
-                        <td>1/2 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Ajo</th>
-                        <td>10 dientes picados</td>
-                    </tr>
-                    <tr>
-                        <th>Cebollin</th>
-                        <td>1 taza picado</td>
-                    </tr>
-                    <tr>
-                        <th>Aji dulce</th>
-                        <td>1/2 de taza picado</td>
-                    </tr>
-                    <tr>
-                        <th>Paprika</th>
-                        <td>1 cucharada</td>
-                    </tr>
-                     <tr>
-                        <th>Caldo de res</th>
-                        <td>1 taza</td>
-                    </tr> <tr>
-                        <th>aceite onotado</th>
-                        <td>1/2 taza</td>
-                    </tr> <tr>
-                        <th>Vino tinto</th>
-                        <td>1 taza</td>
-                    </tr>
-                     <tr>
-                        <th>sal</th>
-                        <td>Al gusto</td>
-                    </tr>
-                </table>
-                <table>
-                    <caption>Para la masa</caption>
-                    <tr>
-                        <th>Harina de maiz</th>
-                        <td>2 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Aceite anotado</th>
-                        <td>1 taza</td>
-                    </tr>
-                    <tr>
-                        <th>Caldod de pollo</th>
-                        <td>12 tazas</td>
-                    </tr>
-                </table>
-                <article>
-                    <h2>Preparacion</h2>
-                    <p>Lo primero que debes hacer es poner a calentar una olla grande junto con el aceite onotado. Cuando suba la temperatura, agrega la cebolla, el ajo y el cebollín. Deja rehogar por unos minutos. Seguidamente, añade el ají dulce y deja cocinar por un par de minutos más.Ahora, con la ayuda de una cuchara de madera, retira el sofrito resultante y sube la temperatura. Luego agrega la carne de cerdo y séllala. Retira y reserva. Repite el mismo procedimiento con la carne de res y las costillas de cerdo. Posteriormente, devuelve el sofrito y el resto de las carnes. Añade la paprika, sal a gusto, el caldo de res y el vino, si es de tu gusto. Incorpora todo y deja cocinar por 3 horas a fuego medio. Una vez esté listo el guiso, déjalo reposar lo suficiente antes de usarlo. Es importante que retires los huesos de las costillas, aunque eso también es a gusto de cada persona.</p>
-                </article>
+    <caption>Ingredientes: Guiso</caption>
+
+    <thead>
+        <tr tabindex="0">
+            <th id="col-ingrediente-g" scope="col" tabindex="0">Ingrediente</th>
+            <th id="col-cantidad-g" scope="col" tabindex="0">Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr tabindex="0">
+            <th id="g-carne-res" scope="row" tabindex="0">Carne de res</th>
+            <td headers="g-carne-res col-cantidad-g" tabindex="0">1 kg</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-carne-cerdo" scope="row" tabindex="0">Carne de cerdo</th>
+            <td headers="g-carne-cerdo col-cantidad-g" tabindex="0">1/2 kg</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-costilla" scope="row" tabindex="0">Costilla de cerdo</th>
+            <td headers="g-costilla col-cantidad-g" tabindex="0">1/2 kg</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-ajo" scope="row" tabindex="0">Ajo</th>
+            <td headers="g-ajo col-cantidad-g" tabindex="0">10 dientes picados</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-cebollin" scope="row" tabindex="0">Cebollín</th>
+            <td headers="g-cebollin col-cantidad-g" tabindex="0">1 taza picado</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-aji" scope="row" tabindex="0">Ají dulce</th>
+            <td headers="g-aji col-cantidad-g" tabindex="0">1/2 taza picado</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-paprika" scope="row" tabindex="0">Paprika</th>
+            <td headers="g-paprika col-cantidad-g" tabindex="0">1 cucharada</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-caldo" scope="row" tabindex="0">Caldo de res</th>
+            <td headers="g-caldo col-cantidad-g" tabindex="0">1 taza</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-aceite" scope="row" tabindex="0">Aceite onotado</th>
+            <td headers="g-aceite col-cantidad-g" tabindex="0">1/2 taza</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-vino" scope="row" tabindex="0">Vino tinto</th>
+            <td headers="g-vino col-cantidad-g" tabindex="0">1 taza</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="g-sal" scope="row" tabindex="0">Sal</th>
+            <td headers="g-sal col-cantidad-g" tabindex="0">Al gusto</td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <caption>Para la masa</caption>
+
+    <thead>
+        <tr tabindex="0">
+            <th id="col-ingrediente-m" scope="col" tabindex="0">Ingrediente</th>
+            <th id="col-cantidad-m" scope="col" tabindex="0">Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr tabindex="0">
+            <th id="m-harina" scope="row" tabindex="0">Harina de maíz</th>
+            <td headers="m-harina col-cantidad-m" tabindex="0">2 kg</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="m-aceite" scope="row" tabindex="0">Aceite anotado</th>
+            <td headers="m-aceite col-cantidad-m" tabindex="0">1 taza</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="m-caldo" scope="row" tabindex="0">Caldo de pollo</th>
+            <td headers="m-caldo col-cantidad-m" tabindex="0">12 tazas</td>
+        </tr>
+
+    </tbody>
+</table>
+        <article tabindex="0" aria-labelledby="prep-Preparacion" aria-describedby="prep-texto">
+            <h2 tabindex="0" id="prep-titulo">Preparación</h2>
+            <p tabindex="0" id="prep-Como preparar">
+                Lo primero que debes hacer es poner a calentar una olla grande junto con el aceite onotado.
+                Cuando suba la temperatura, agrega la cebolla, el ajo y el cebollín. Deja rehogar por unos minutos.
+                Seguidamente, añade el ají dulce y deja cocinar por un par de minutos más. Ahora, con la ayuda de 
+                una cuchara de madera, retira el sofrito resultante y sube la temperatura. Luego agrega la carne 
+                de cerdo y séllala. Retira y reserva. Repite el mismo procedimiento con la carne de res y las 
+                costillas de cerdo. Posteriormente, devuelve el sofrito y el resto de las carnes. Añade la paprika, 
+                sal a gusto, el caldo de res y el vino, si es de tu gusto. Incorpora todo y deja cocinar por 3 horas 
+                a fuego medio. Una vez esté listo el guiso, déjalo reposar lo suficiente antes de usarlo. Es importante 
+                que retires los huesos de las costillas, aunque eso también es a gusto de cada persona.
+            </p>
+</article>
+
             </article>
         </section>
     </main>
-</body>
-<footer>
-    <nav>
-        <ol>
-            <li>Whatsapp</li>
-            <li>Correo</li>
-            <li>Paginas recomendadas</li>
-        </ol>
-</footer>
+<footer role="contentinfo">
+        <nav role="navigation" aria-label="Enlaces de contacto">
+            <ol id="contacto">
+                <li><a href="https://wa.me/XXXXXXXXX">Whatsapp</a></li>
+                <li><a href="correo@ejemplo.com">Correo</a></li>
+                <li><a href="https://ejemplo.com">Páginas recomendadas</a></li>
+            </ol>
+        </nav>
+    </footer>
+    </body>
 </html>
