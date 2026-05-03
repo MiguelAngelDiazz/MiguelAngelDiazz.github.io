@@ -26,9 +26,8 @@
         "headline": "Las mejores comidas de la gastronomía venezolana",
         "description": "Tienes las mejores recetas de Venezuela y tendrás los ingredientes y métodos de preparación.",
         "inLanguage": "es",
-        "primaryImageOfPage": "https://miguelangeldiazz.github.io/Imagenes/arepa.jpg"
     }
-</script>
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,23 +41,21 @@
     }
     ]
     }
-</script>
-    
+    </script>
     <title>Mi Pagina web</title>
-    
 </head>
 <body>
-    <header>
-        <nav>
+    <h1>Que Sabor pana</h1>
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
             <ol>
-                <li>Recetas</li>
-                <li class="titulo">Que sabor pana</li>
-                <li>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ol>
         </nav>
     </header>
-<main>
-    <section>
+<main id="contenido" role="main">
+    <section id="recetas" aria-labelledby="titulo-recetas">
         <article>
             <a href="arepareina.html"><img src="./Imagenes/arepa reina.jpeg" alt="Arepa reina pepiada" width="20%"></a>
             <p>Arepa reina pepiada</p>
@@ -72,7 +69,7 @@
             <p>Cachapa con queso</p>
         </article>
         <article>
-            <a href="pabellon.html"><img src="./Imagenes/pabellon.jpg" alt="pabellon carne, arroz, frijoles, tajadas de platano" width="20%"></a>
+            <a href="pabellon.html"><img src="./Imagenes/pabellon.jpg" alt="pabellon plato tipico" width="20%"></a>
             <p>Pabellon plato tipico</p>
         </article>
         <article>
@@ -85,14 +82,14 @@
         </article>
     </section>
 </main>
-<footer>
-    <nav>
-        <ol>
-            <li>Whatsapp</li>
-            <li>Correo</li>
-            <li>Paginas recomendadas</li>
-        </ol>
-    </nav>
-</footer> 
+<footer role="contentinfo">
+        <nav role="navigation" aria-label="Enlaces de contacto">
+            <ol id="contacto">
+                <li><a href="https://wa.me/XXXXXXXXX">Whatsapp</a></li>
+                <li><a href="correo@ejemplo.com">Correo</a></li>
+                <li><a href="https://ejemplo.com">Páginas recomendadas</a></li>
+            </ol>
+        </nav>
+    </footer>
 </body>
 </html>
