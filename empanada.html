@@ -64,12 +64,12 @@
 <title>Empanada de mechada</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header role="banner">
+        <h1><a href="index.html" aria-current="page"></a>Que Sabor pana</a></h1>
+        <nav role="navigation" aria-label="Menú principal">
             <ol>
-                <li>Recetas</li>
-                <li class="titulo"><a href="index.html">Que sabor pana</a></li>
-                <li>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ol>
         </nav>
     </header>
@@ -87,65 +87,96 @@
             </article>
             <article>
                 <table>
-                    <caption>Ingredientes</caption>
-                    <tr>
-                        <th>Agua</th>
-                        <td>480 ml</td>
-                    </tr>
-                    <tr>
-                        <th>sal</th>
-                        <td>Al gusto</td>
-                    </tr>
-                    <tr>
-                        <th>Carne de res</th>
-                        <td>1 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Cebolla</th>
-                        <td>1 grande</td>
-                    </tr>
-                    <tr>
-                        <th>Ají dulce</th>
-                        <td>1/2</td>
-                    </tr>
-                    <tr>
-                        <th>Ajo</th>
-                        <td>4 dientes</td>
-                    </tr>
-                    <tr>
-                        <th>Aceite vegetal o virgen</th>
-                        <td>1 cucharada</td>
-                    </tr>
-                    <tr>
-                </table>
-                <table>
-                    <caption>Para la masa</caption>
-                    <tr>
-                        <th>Harina de maiz</th>
-                        <td>2 tazas</td>
-                    </tr>
-                    <tr>
-                        <th>Azucar blanca</th>
-                        <td>1 cucharita</td>
-                    </tr>
-                    <tr>
-                        <th>Agua</th>
-                        <td>4 tazas</td>
-                    </tr>
-                </table>
+    <caption>Ingredientes</caption>
+
+    <thead>
+        <tr tabindex="0">
+            <th id="col-ingrediente" scope="col" tabindex="0">Ingrediente</th>
+            <th id="col-cantidad" scope="col" tabindex="0">Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr tabindex="0">
+            <th id="ing-agua" scope="row" tabindex="0">Agua</th>
+            <td headers="ing-agua col-cantidad" tabindex="0">480 ml</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-sal" scope="row" tabindex="0">Sal</th>
+            <td headers="ing-sal col-cantidad" tabindex="0">Al gusto</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-carne" scope="row" tabindex="0">Carne de res</th>
+            <td headers="ing-carne col-cantidad" tabindex="0">1 kg</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-cebolla" scope="row" tabindex="0">Cebolla</th>
+            <td headers="ing-cebolla col-cantidad" tabindex="0">1 grande</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-aji dulce" scope="row" tabindex="0">Ají dulce</th>
+            <td headers="ing-aji col-cantidad" tabindex="0">1/2</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-ajo" scope="row" tabindex="0">Ajo</th>
+            <td headers="ing-ajo col-cantidad" tabindex="0">4 dientes</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-aceite" scope="row" tabindex="0">Aceite vegetal o virgen</th>
+            <td headers="ing-aceite col-cantidad" tabindex="0">1 cucharada</td>
+        </tr>
+        <table>
+    <caption>Masa</caption>
+
+    <thead>
+        <tr tabindex="0">
+            <th id="col-ingrediente2" scope="col" tabindex="0">Ingrediente</th>
+            <th id="col-cantidad2" scope="col" tabindex="0">Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr tabindex="0">
+            <th id="masa-harina" scope="row" tabindex="0">Harina de maíz</th>
+            <td headers="masa-harina col-cantidad2" tabindex="0">2 tazas</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="masa-azucar" scope="row" tabindex="0">Azúcar blanca</th>
+            <td headers="masa-azucar col-cantidad2" tabindex="0">1 cucharita</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="masa-agua" scope="row" tabindex="0">Agua</th>
+            <td headers="masa-agua col-cantidad2" tabindex="0">4 tazas</td>
+        </tr>
+    </tbody>
+</table>
+
+    </tbody>
+</table>
                 <article>
                     <h2><a href="saberempanada.html">¿La harina de maiz ayuda en la salud?</a></h2>
                 </article>
             </article>
         </section>
     </main>
-    <footer>
-    <nav>
-        <ol>
-            <li>Whatsapp</li>
-            <li>Correo</li>
-            <li>Paginas recomendadas</li>
-        </ol>
-</footer>
-</body>
+<footer role="contentinfo">
+        <nav role="navigation" aria-label="Enlaces de contacto">
+            <ol id="contacto">
+                <li><a href="https://wa.me/XXXXXXXXX">Whatsapp</a></li>
+                <li><a href="correo@ejemplo.com">Correo</a></li>
+                <li><a href="https://ejemplo.com">Páginas recomendadas</a></li>
+            </ol>
+        </nav>
+    </footer>
+    </body>
 </html>
