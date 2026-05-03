@@ -4,7 +4,7 @@ body {
     font-family: "Gorditas", serif;
 }
 a {
-    color: rgb(255, 89, 0);
+    color: inherit;
     text-decoration: none;
 }
 nav ol {
@@ -64,6 +64,15 @@ article {
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     width: 95%;
     max-width: 1200px;
+}
+h1{
+    font-family: "Bangers";
+    font-size: 32px;
+    color: rgb(255, 89, 0);
+    text-decoration: underline rgb(255, 89, 0);
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.5s;
 }
 h2 {
     text-align: center;
@@ -142,6 +151,7 @@ footer ol li {
 footer ol li:hover {
     background-color: rgba(255,255,255,0.3);
     transform: scale(1.05);
+    color: white;
 }
 
 /*Medias querys 768px*/
