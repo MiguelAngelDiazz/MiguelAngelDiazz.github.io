@@ -25,7 +25,6 @@
         "url": "https://miguelangeldiazz.github.io/arepareina.html",
         "description": "Receta completa de la Arepa Reina Pepiada, un clásico venezolano con pollo, aguacate y mayonesa.",
         "inLanguage": "es",
-        "about": "Receta de Arepa Reina Pepiada.",
     }
     </script>
     <script type="application/ld+json">
@@ -51,17 +50,17 @@
     <title>Arepa reina</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header role="banner">
+        <h1><a href="index.html" aria-current="page"></a>Que Sabor pana</a></h1>
+        <nav role="navigation" aria-label="Menú principal">
             <ol>
-                <li>Recetas</li>
-                <li class="titulo"><a href="index.html">Que sabor pana</a></li>
-                <li>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ol>
         </nav>
     </header>
-    <main>
-        <nav class="breadcrumbs">
+    <main id="contenido" role="main">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
                 <a href="https://miguelangeldiazz.github.io/">Inicio ></a> 
                 <a href="https://miguelangeldiazz.github.io/arepareina.html"> Arepa reina</a> 
         </nav>
@@ -73,85 +72,91 @@
             </article>
             <article>
                 <table>
-                    <caption>Ingredientes</caption>
-                    <tr>
-                        <th>Harina de maiz precocida</th>
-                        <td>300 gr</td>
-                    </tr>
-                    <tr>
-                        <th>Agua</th>
-                        <td>480 ml</td>
-                    </tr>
-                    <tr>
-                        <th>sal</th>
-                        <td>2 gr</td>
-                    </tr>
-                    <tr>
-                        <th>Pechuga de pollo</th>
-                        <td>1 o 2 "Depende cuantas quieras hacer"</td>
-                    </tr>
-                    <tr>
-                        <th>Aguacate maduro</th>
-                        <td>1 o  2</td>
-                    </tr>
-                    <tr>
-                        <th>Cebolla morada</th>
-                        <td>1/2 media</td>
-                    </tr>
-                    <tr>
-                        <th>Diente de ajo</th>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <th>mayonesa</th>
-                        <td>30 ml</td>
-                    </tr>
-                    <tr>
-                        <th>Jugo de limon</th>
-                        <td>1 cucharada</td>
-                    </tr><tr>
-                        <th>Pimienta negra</th>
-                        <td>A gusto</td>
-                    </tr><tr>
-                        <th>Perejil fresco</th>
-                        <td>"Opcional"</td>
-                    </tr><tr>
-                        <th>Tomate</th>
-                        <td>"Opcional"</td>
-                    </tr>
-                </table>
-                <table>
-                    <caption>Como cocinar la Arepa</caption>
-                     <tr>
-                        <th>Tiempo total</th>
-                        <td>30 min</td>
-                    </tr>
-                     <tr>
-                        <th>Elaboracion</th>
-                        <td>10 min</td>
-                    </tr>
-                     <tr>
-                        <th>Cocción</th>
-                        <td>20 min</td>
-                    </tr>
-                    <tr>
-                        <th>Reposo</th>
-                        <td>10 min</td>
-                    </tr>
-                </table>
+                    <table>
+    <caption>Ingredientes</caption>
+    <thead>
+        <tr tabindex="0">
+            <th id="ingrediente" scope="col" tabindex="0">Ingrediente</th>
+            <th id="cantidad" scope="col" tabindex="0">Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr tabindex="0">
+            <th id="harina de maiz" scope="row" tabindex="0">Harina de maíz precocida</th>
+            <td headers="ing-harina col-cantidad" tabindex="0">300 gr</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="agua" scope="row" tabindex="0">Agua</th>
+            <td headers="ing-agua col-cantidad" tabindex="0">480 ml</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-sal" scope="row" tabindex="0">Sal</th>
+            <td headers="ing-sal col-cantidad" tabindex="0">2 gr</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-pollo" scope="row" tabindex="0">Pechuga de pollo</th>
+            <td headers="ing-pollo col-cantidad" tabindex="0">1 o 2</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-aguacate" scope="row" tabindex="0">Aguacate maduro</th>
+            <td headers="ing-aguacate col-cantidad" tabindex="0">1 o 2</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-cebolla" scope="row" tabindex="0">Cebolla morada</th>
+            <td headers="ing-cebolla col-cantidad" tabindex="0">1/2</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-ajo" scope="row" tabindex="0">Diente de ajo</th>
+            <td headers="ing-ajo col-cantidad" tabindex="0">1</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-mayo" scope="row" tabindex="0">Mayonesa</th>
+            <td headers="ing-mayo col-cantidad" tabindex="0">30 ml</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-limon" scope="row" tabindex="0">Jugo de limón</th>
+            <td headers="ing-limon col-cantidad" tabindex="0">1 cucharada</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-pimienta" scope="row" tabindex="0">Pimienta negra</th>
+            <td headers="ing-pimienta col-cantidad" tabindex="0">A gusto</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-perejil" scope="row" tabindex="0">Perejil fresco</th>
+            <td headers="ing-perejil col-cantidad" tabindex="0">Opcional</td>
+        </tr>
+
+        <tr tabindex="0">
+            <th id="ing-tomate" scope="row" tabindex="0">Tomate</th>
+            <td headers="ing-tomate col-cantidad" tabindex="0">Opcional</td>
+        </tr>
+    </tbody>
+</table>
                 <article>
                     <h2><a href="saberarepa.html">¿La arepa y la gran colombia?</a></h2>
                 </article>
             </article>
         </section>
     </main>
-    <footer>
-    <nav>
-        <ol>
-            <li>Whatsapp</li>
-            <li>Correo</li>
-            <li>Paginas recomendadas</li>
-        </ol>
-</footer>
+<footer role="contentinfo">
+        <nav role="navigation" aria-label="Enlaces de contacto">
+            <ol id="contacto">
+                <li><a href="https://wa.me/XXXXXXXXX">Whatsapp</a></li>
+                <li><a href="correo@ejemplo.com">Correo</a></li>
+                <li><a href="https://ejemplo.com">Páginas recomendadas</a></li>
+            </ol>
+        </nav>
+    </footer>
 </body>
 </html>
